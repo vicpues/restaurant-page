@@ -1,0 +1,14 @@
+- [_] Get idea for design and concept (?)
+- [_] Include html footer
+- [_] Apply some general styles to the header and main
+- [_] Create homepage directly in html
+- [_] Style with a general and homepage css file
+- [_] Include fancy fonts or something
+- [_] Recreate homepage using js in separate module
+- [_] Write logic and listeners to switch between tabs in index.js
+- [_] Recreate other two pages
+- [_] Style other two pages
+- [_] Run the home tab module by default on page load
+- [_] Write readme
+- [_] Publish to gh pages (It's a little complicated) 
+- [_] Link repo and profile in footer
