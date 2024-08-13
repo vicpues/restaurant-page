@@ -42,6 +42,13 @@ p, h1, h2, h3, h4, h5, h6 {
   font: bold 16px var(--paragraph-typeface);
 }
 
+/* Utility classes */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* Layout */
 
@@ -56,11 +63,19 @@ body {
 /* Header */
 
 #header {
+  flex-wrap: wrap;
+  column-gap: 3rem;
+  row-gap: .6rem;
+  padding: .5rem 1rem 1rem;
   background-color: var(--medium-background);
 }
+
 
 /* Footer */
 
 #footer {
+  flex-direction: column;
+  gap: .3rem;
+  padding: .6rem 1rem .3rem;
   background-color: var(--medium-background);
 }
