@@ -1,0 +1,6 @@
+- Courier monospace for paragraphs and titles (built-in)
+- Courier new bold aliased for subtitles (needs import: 
+https://fontstruct.com/fontstructions/show/1880599/courierstuck)
+- Variables for troll colors
+- Convert regular text into typing quirks with a js module
+- Store text in a locales json object for easy translation
