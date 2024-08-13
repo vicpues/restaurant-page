@@ -72,6 +72,42 @@ body {
   row-gap: .6rem;
   padding: .5rem 1rem 1rem;
   background-color: var(--medium-background);
+  text-align: center;
+}
+
+nav {
+  text-wrap: nowrap;
+}
+
+
+/* So many lines of css, just to place a gif between the buttons */
+.nav-button + .nav-button {
+  position: relative;
+  --candy-corn-size: 1em;
+  --candy-corn-padding: .4em;
+  margin-left: calc(
+    -1ch
+    + var(--candy-corn-padding) * 2
+    + var(--candy-corn-size)
+  );
+}
+
+.nav-button + .nav-button::before {
+  content: "";
+  position: absolute;
+  width: var(--candy-corn-size);
+  height: var(--candy-corn-size);
+  background-image: url("../assets/candy-corn.gif");
+
+  top: calc(
+    50%
+    - var(--candy-corn-size) / 2
+  );
+
+  left: calc(
+    -1 * var(--candy-corn-size)
+    - var(--candy-corn-padding)
+  );
 }
 
 
