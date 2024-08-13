@@ -33,8 +33,34 @@ p, h1, h2, h3, h4, h5, h6 {
 /* Root settings and variables */
 
 :root {
+  --paragraph-typeface: 'Courier New', Courier, monospace;
 
+  --medium-background: #535353;
+  --light-background: #c6c6c6;
+  --white-background: #efefef;
+
+  font: bold 16px var(--paragraph-typeface);
 }
 
 
-/* Component Imports */
+/* Layout */
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Header */
+
+#header {
+  background-color: var(--medium-background);
+}
+
+/* Footer */
+
+#footer {
+  background-color: var(--medium-background);
+}
