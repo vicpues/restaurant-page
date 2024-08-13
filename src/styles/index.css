@@ -85,19 +85,23 @@ nav {
   position: relative;
   --candy-corn-size: 1em;
   --candy-corn-padding: .4em;
+  
+  /* Remove default left margin,
+  Add room for the icon,
+  Add padding on both sides */
   margin-left: calc(
     -1ch
-    + var(--candy-corn-padding) * 2
     + var(--candy-corn-size)
+    + var(--candy-corn-padding) * 2
   );
 }
 
 .nav-button + .nav-button::before {
   content: "";
   position: absolute;
+  background-image: url("../assets/candy-corn.gif");
   width: var(--candy-corn-size);
   height: var(--candy-corn-size);
-  background-image: url("../assets/candy-corn.gif");
 
   top: calc(
     50%
