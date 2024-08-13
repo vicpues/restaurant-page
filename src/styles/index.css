@@ -40,7 +40,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --light-background: #c6c6c6;
   --white-background: #efefef;
 
-  --link-blue: #43b4ff;
+  --link-blue-regular: #43b4ff;
+  --link-blue-light: #6cc4ff;
 
   font: bold 16px var(--paragraph-typeface);
 }
@@ -85,5 +86,9 @@ body {
 
 .footer-link,
 .footer-link:visited {
-  color: var(--link-blue);
+  color: var(--link-blue-regular);
+}
+
+.footer-link:hover {
+  filter: brightness(120%);
 }
