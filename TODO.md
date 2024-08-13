@@ -1,5 +1,5 @@
-- [_] Get idea for design and concept (?)
-- [_] Include html footer
+- [x] Get idea for design and concept (?)
+- [x] Include html footer
 - [_] Apply some general styles to the header and main
 - [_] Create homepage directly in html
 - [_] Style with a general and homepage css file
