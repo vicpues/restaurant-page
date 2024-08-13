@@ -1,4 +1,5 @@
 /* CSS Reset by Josh Comeau*/
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -39,6 +40,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --light-background: #c6c6c6;
   --white-background: #efefef;
 
+  --link-blue: #43b4ff;
+
   font: bold 16px var(--paragraph-typeface);
 }
 
@@ -78,4 +81,9 @@ body {
   gap: .3rem;
   padding: .6rem 1rem .3rem;
   background-color: var(--medium-background);
+}
+
+.footer-link,
+.footer-link:visited {
+  color: var(--link-blue);
 }
