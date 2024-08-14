@@ -163,3 +163,10 @@ nav {
 .footer-link:hover {
   filter: brightness(120%);
 }
+
+/* Content */
+
+#content {
+  background-color: #c6c6c6;
+  flex: 1;
+}
