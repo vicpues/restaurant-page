@@ -35,14 +35,22 @@ p, h1, h2, h3, h4, h5, h6 {
 
 :root {
   --paragraph-typeface: 'Courier New', Courier, monospace;
+  --button-typeface: Arial, Helvetica, sans-serif;
 
   --medium-background: #535353;
   --light-background: #c6c6c6;
   --white-background: #efefef;
 
-  --link-blue-regular: #43b4ff;
+  --nav-blue: #43b4ff;
+  --nav-green: #29ff4a;
+  --nav-yellow: #f7f72a;
+  --nav-orange: #ffb529;
 
   font: bold 16px var(--paragraph-typeface);
+}
+
+a, button {
+  cursor: pointer;
 }
 
 /* Utility classes */
@@ -78,12 +86,21 @@ nav {
   text-wrap: nowrap;
 }
 
+.nav-button {
+  font: bold .9rem var(--button-typeface);
+  text-transform: uppercase;
+  text-decoration: underline;
+  background-color: #0000;
+
+  padding: .5em .8em;
+  border: none;
+}
 
 /* So many lines of css, just to place a gif between the buttons */
 .nav-button + .nav-button {
   position: relative;
   --candy-corn-size: 1em;
-  --candy-corn-padding: .4em;
+  --candy-corn-padding: .2em;
   
   /* Remove default left margin,
   Add room for the icon,
@@ -101,6 +118,7 @@ nav {
   background-image: url("../assets/candy-corn.gif");
   width: var(--candy-corn-size);
   height: var(--candy-corn-size);
+  cursor: default;
 
   top: calc(
     50%
@@ -126,7 +144,7 @@ nav {
 
 .footer-link,
 .footer-link:visited {
-  color: var(--link-blue-regular);
+  color: var(--nav-blue);
 }
 
 .footer-link:hover {
