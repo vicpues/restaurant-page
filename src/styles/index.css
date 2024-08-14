@@ -61,6 +61,15 @@ a, button {
   align-items: center;
 }
 
+.hover-brighten:hover {
+  filter: brightness(130%);
+}
+
+.hover-brighten:hover::before,
+.hover-brighten:hover::after {
+  filter: brightness(77%);
+}
+
 /* Layout */
 
 body {
@@ -158,10 +167,6 @@ nav {
 .footer-link,
 .footer-link:visited {
   color: var(--nav-blue);
-}
-
-.footer-link:hover {
-  filter: brightness(120%);
 }
 
 /* Content */
