@@ -30,16 +30,29 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/* Font imports */
+
+@font-face {
+  font-family: 'courierstuckregular';
+  src: url('../fonts/courierstuck-webfont.woff2') format('woff2'),
+       url('../fonts/courierstuck-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Root settings and variables */
 
 :root {
   --paragraph-typeface: 'Courier New', Courier, monospace;
   --button-typeface: Arial, Helvetica, sans-serif;
+  --display-typeface: "courierstuckregular", "Courier New", Courier, monospace;
 
   --medium-background: #535353;
   --light-background: #c6c6c6;
   --white-background: #efefef;
+
+  --title-text-green: #cbdd38;
+  --title-text-shadow: #253413;
 
   --nav-blue: #43b4ff;
   --nav-green: #29ff4a;
@@ -89,6 +102,15 @@ body {
   padding: .5rem 1rem .8rem;
   background-color: var(--medium-background);
   text-align: center;
+}
+
+h1 {
+  font-family: var(--display-typeface);
+  letter-spacing: .03em;
+  margin-top: -.2em;
+
+  color: var(--title-text-green);
+  text-shadow: .065em .065em 0 var(--title-text-shadow);
 }
 
 nav {
