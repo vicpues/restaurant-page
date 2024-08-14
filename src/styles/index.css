@@ -91,6 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #c6c6c6;
 }
 
 /* Header */
@@ -199,6 +200,7 @@ nav {
 /* Content */
 
 #content {
-  background-color: #c6c6c6;
   flex: 1;
+  margin: 2rem 6rem;
+  background-color: var(--white-background);
 }
