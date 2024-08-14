@@ -92,9 +92,22 @@ nav {
   text-decoration: underline;
   background-color: #0000;
 
-  padding: .5em .8em;
+  padding: .8em;
   border: none;
 }
+
+#home-button {
+  color: var(--nav-yellow);
+}
+
+#menu-button {
+  color: var(--nav-green);
+}
+
+#about-button {
+  color: var(--nav-orange);
+}
+
 
 /* So many lines of css, just to place a gif between the buttons */
 .nav-button + .nav-button {
