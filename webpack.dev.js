@@ -14,5 +14,10 @@ module.exports = merge(common, {
         compress: true,
         port: 5500,
         host: "0.0.0.0",
+        open: {
+            app: {
+                name: 'google-chrome',
+            },
+        },
     },
 });
