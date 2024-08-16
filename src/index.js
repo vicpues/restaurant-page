@@ -10,3 +10,9 @@ function clearContent() {
         contentElement.removeChild(contentElement.lastChild);
     };
 }
+
+function populateContent(newChildren) {
+    for (let child of newChildren) {
+        contentElement.appendChild(child);
+    };
+}
