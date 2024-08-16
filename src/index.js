@@ -1,11 +1,11 @@
 import "./styles/index.css"
-import generateHomePage from "./pages/home.js"
+import homePage from "./pages/home.js"
 
 // Cache content section
 const contentElement = document.querySelector("#content");
 
 
-replaceContent(generateHomePage());
+replaceContent(homePage());
 
 
 // DOM functions

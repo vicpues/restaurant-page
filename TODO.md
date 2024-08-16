@@ -4,7 +4,7 @@
 - [x] Create homepage directly in html
 - [x] Style with a general and homepage css file
 - [x] Include fancy fonts or something
-- [_] Recreate homepage using js in separate module
+- [x] Recreate homepage using js in separate module
 - [_] Write logic and listeners to switch between tabs in index.js
 - [_] Recreate other two pages
 - [_] Style other two pages
