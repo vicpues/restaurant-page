@@ -8,6 +8,7 @@
 - [_] Write logic and listeners to switch between tabs in index.js
 - [_] Recreate other two pages
 - [_] Style other two pages
+- [_] Compress / optimise images
 - [_] Run the home tab module by default on page load
 - [_] Write readme
 - [_] Publish to gh pages (It's a little complicated) 
