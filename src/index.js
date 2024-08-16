@@ -5,6 +5,11 @@ const contentElement = document.querySelector("#content");
 loadHomePage();
 
 
+function replaceContent(newChildren) {
+    clearContent();
+    populateContent(newChildren);
+}
+
 function clearContent() {
     while (contentElement.firstChild) {
         contentElement.removeChild(contentElement.lastChild);
