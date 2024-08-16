@@ -206,11 +206,11 @@ nav {
 
 .body-article {
   background-color: var(--white-background);
-  padding: 1.5rem 1.5rem 2rem;
+  padding: 2.5rem 1.5rem 2rem;
   text-align: center;
 }
 
-* + .body-article {
+.body-article + .body-article {
   margin-top: 2rem;
 }
 
@@ -218,6 +218,7 @@ h3 {
   margin-bottom: .8em;
 }
 
-.body-para + .body-para {
+* + .body-para,
+* + figcaption {
   margin-top: 1em;
 }
