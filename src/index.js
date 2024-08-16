@@ -1,9 +1,14 @@
 import "./styles/index.css"
-import loadHomePage from "./pages/home.js"
+import generateHomePage from "./pages/home.js"
 
+// Cache content section
 const contentElement = document.querySelector("#content");
-loadHomePage();
 
+
+replaceContent(generateHomePage());
+
+
+// DOM functions
 
 function replaceContent(newChildren) {
     clearContent();
