@@ -210,7 +210,7 @@ nav {
   text-align: center;
 }
 
-.body-article + .body-article {
+* + .body-article {
   margin-top: 2rem;
 }
 
