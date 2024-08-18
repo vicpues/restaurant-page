@@ -1,0 +1,16 @@
+#footer {
+    flex-direction: column;
+    gap: .3rem;
+    padding: .6rem 1rem;
+    background-color: var(--medium-background);
+}
+
+.footer-link,
+.footer-link:visited {
+    color: var(--nav-blue);
+    padding: .5em 1.2em;
+}
+
+.link-separator {
+    margin-inline: -1ch;
+}

@@ -1,6 +1,7 @@
 /* Module imports */
 
 @use "./header.scss";
+@use "./footer.scss";
 
 /* CSS Reset by Josh Comeau*/
 
@@ -98,24 +99,6 @@ body {
   background-color: #c6c6c6;
 }
 
-/* Footer */
-
-#footer {
-  flex-direction: column;
-  gap: .3rem;
-  padding: .6rem 1rem;
-  background-color: var(--medium-background);
-}
-
-.footer-link,
-.footer-link:visited {
-  color: var(--nav-blue);
-  padding: .5em 1.2em;
-}
-
-.link-separator {
-  margin-inline: -1ch;
-}
 
 /* Content */
 
