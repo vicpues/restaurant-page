@@ -1,4 +1,4 @@
-import "./styles/index.css"
+import "./styles/main.scss"
 import homePage from "./pages/home.js"
 
 // Cache content section

@@ -76,11 +76,11 @@ a, button {
 
 .hover-brighten:hover {
   filter: brightness(130%);
-}
 
-.hover-brighten:hover::before,
-.hover-brighten:hover::after {
-  filter: brightness(77%);
+  &::before,
+  &::after {
+    filter: brightness(77%);
+  }
 }
 
 /* Layout */
@@ -155,28 +155,27 @@ nav {
     + var(--candy-corn-size)
     + var(--candy-corn-padding) * 2
   );
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../assets/candy-corn.gif");
+    width: var(--candy-corn-size);
+    height: var(--candy-corn-size);
+    cursor: default;
+    
+    top: calc(
+      50%
+      - var(--candy-corn-size) / 2
+    );
+    
+    left: calc(
+      -1 * var(--candy-corn-size)
+      - var(--candy-corn-padding)
+      - .05em
+    );
+  }
 }
-
-.nav-button + .nav-button::before {
-  content: "";
-  position: absolute;
-  background-image: url("../assets/candy-corn.gif");
-  width: var(--candy-corn-size);
-  height: var(--candy-corn-size);
-  cursor: default;
-
-  top: calc(
-    50%
-    - var(--candy-corn-size) / 2
-  );
-
-  left: calc(
-    -1 * var(--candy-corn-size)
-    - var(--candy-corn-padding)
-    - .05em
-  );
-}
-
 
 /* Footer */
 
