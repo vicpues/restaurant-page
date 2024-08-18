@@ -5,6 +5,7 @@ import menuPage from "./pages/menu.js";
 
 // Main section
 const dom = cacheDom();
+bindEvents();
 replaceContent(homePage());
 
 
@@ -22,6 +23,11 @@ function cacheDom() {
 
 // Events
 
+function bindEvents() {
+    dom.homeButton.addEventListener("click", replaceContent(homePage()));
+    dom.menuButton.addEventListener("click", replaceContent(menuPage()));
+    dom.aboutButton.addEventListener("click", replaceContent(aboutPage()));
+}
 
 
 // DOM functions
@@ -38,6 +44,9 @@ function clearContent() {
 }
 
 function populateContent(newChildren) {
+    if (!newChildren) {
+        return;
+    };
     for (let child of newChildren) {
         dom.content.appendChild(child);
     };
