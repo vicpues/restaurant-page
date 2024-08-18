@@ -1,4 +1,4 @@
-import adsImg from "../assets/commercial-partners.gif";
+import adsImg from "../assets/commercial-partners.webp";
 
 export default function generateHomePage() {
 
