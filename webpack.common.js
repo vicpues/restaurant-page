@@ -1,5 +1,27 @@
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
+
+// Plugins
+const plugins = [
+
+  new HtmlWebpackPlugin({
+    template: "./src/template.html",
+  }),
+
+  new MiniCssExtractPlugin({
+    filename: devMode ? "[name].css" : "[name].[contenthash].css",
+    chunkFilename: devMode ? "[id].css" : "[id].[contenthash].css",
+  }),
+
+];
+
+// only enable hot in development
+if (devMode) {
+  plugins.push(new webpack.HotModuleReplacementPlugin());
+};
 
 module.exports = {
   mode: "development",
@@ -10,12 +32,8 @@ module.exports = {
     clean: true,
   },
 
-  // Html plugin
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/template.html",
-    }),
-  ],
+  // Load plugins
+  plugins,
 
   // Webpack modules
   module: {
@@ -23,7 +41,7 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          "style-loader",
+          MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader",
         ],
@@ -43,3 +61,5 @@ module.exports = {
     ],
   }
 };
+
+
