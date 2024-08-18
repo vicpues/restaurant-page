@@ -24,9 +24,9 @@ function cacheDom() {
 // Events
 
 function bindEvents() {
-    dom.homeButton.addEventListener("click", replaceContent(homePage()));
-    dom.menuButton.addEventListener("click", replaceContent(menuPage()));
-    dom.aboutButton.addEventListener("click", replaceContent(aboutPage()));
+    dom.homeButton.addEventListener("click", () => replaceContent(homePage()));
+    dom.menuButton.addEventListener("click", () => replaceContent(menuPage()));
+    dom.aboutButton.addEventListener("click", () => replaceContent(aboutPage()));
 }
 
 
