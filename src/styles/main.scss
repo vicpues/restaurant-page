@@ -2,6 +2,7 @@
 
 @use "./header.scss";
 @use "./footer.scss";
+@use "./content.scss";
 
 /* CSS Reset by Josh Comeau*/
 
@@ -99,29 +100,3 @@ body {
   background-color: #c6c6c6;
 }
 
-
-/* Content */
-
-#content {
-  flex: 1;
-  margin: 2rem 5rem;
-}
-
-.body-article {
-  background-color: var(--white-background);
-  padding: 2.5rem 1.5rem 2rem;
-  text-align: center;
-}
-
-.body-article + .body-article {
-  margin-top: 2rem;
-}
-
-h3 {
-  margin-bottom: .8em;
-}
-
-* + .body-para,
-* + figcaption {
-  margin-top: 1em;
-}
