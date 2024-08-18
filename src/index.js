@@ -1,5 +1,7 @@
-import "./styles/main.scss"
-import homePage from "./pages/home.js"
+import "./styles/main.scss";
+import homePage from "./pages/home.js";
+import aboutPage from "./pages/about.js";
+import menuPage from "./pages/menu.js";
 
 // Cache content section
 const contentElement = document.querySelector("#content");
