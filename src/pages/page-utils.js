@@ -16,3 +16,7 @@ export function createParagraph(text) {
     para.textContent = text;
     return para;
 }
+
+export function createFigure() {
+    
+}

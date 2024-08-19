@@ -25,7 +25,8 @@ export default function generateMenuPage() {
         image.src = fruitImg;
         figure.appendChild(image);
         const caption = document.createElement("figcaption");
-        caption.textContent = "Just good ol' fruit";
+        caption.textContent = "just some good ol' fruit!";
+        caption.classList.add("john");
         figure.appendChild(caption);
 
         article.appendChild(figure);
