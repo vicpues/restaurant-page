@@ -1,4 +1,4 @@
-import { createArticle, createParagraph } from "./page-utils";
+import { createArticle, createHeader, createParagraph } from "./page-utils";
 
 export default function generateMenuPage() {
     const content = [];
@@ -6,7 +6,9 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        
+        const header = document.createElement("h2");
+        header.textContent = "Our culinary offering";
+        article.appendChild(header);
 
         return article;
     })())
