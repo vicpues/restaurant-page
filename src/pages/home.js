@@ -1,4 +1,5 @@
 import adsImg from "../assets/commercial-partners.webp";
+import {createArticle, createHeader, createParagraph} from "./page-utils";
 
 export default function generateHomePage() {
 
@@ -58,26 +59,6 @@ export default function generateHomePage() {
     article4.appendChild(createParagraph("Saturday: 11:11 - 33:33"));
     article4.appendChild(createParagraph("Sunday: 21:25 - 21:43"));
     content.push(article4);
-
-    
-    function createArticle() {
-        const article = document.createElement("article");
-        article.classList.add("body-article");
-        return article;
-    }
-
-    function createHeader(text) {
-        const header = document.createElement("h3");
-        header.textContent = text;
-        return header;
-    }
-
-    function createParagraph(text) {
-        const para = document.createElement("p");
-        para.classList.add("body-para");
-        para.textContent = text;
-        return para;
-    }
 
     return content;
 }
