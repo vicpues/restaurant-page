@@ -1,4 +1,5 @@
 import fruitImg from "../assets/fruits.webp";
+import soporImg from "../assets/sopor-slime.webp";
 import { createArticle, createHeader, createParagraph, createFigure } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -26,7 +27,7 @@ export default function generateMenuPage() {
             altText: "An assortment of happy, dancing fruits",
             captionText: "just some good ol' fruit!",
             captionClasses: ["quirk", "john"]
-        })
+        });
         article.appendChild(figure);
 
         return article;
@@ -35,7 +36,17 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        
+        const header = createHeader("Sopor slime");
+        article.appendChild(header);
+
+        const figure = createFigure({
+            regularSrc: soporImg,
+            optimalSrc: soporImg,
+            altText: "A bowl of green, gooey sopor slime",
+            captionText: "NOP3. DON'T 3V3N TH1NK 4BOUT 1T.",
+            captionClasses: ["quirk", "terezi"],
+        });
+        article.appendChild(figure);
 
         return article;
     })())
