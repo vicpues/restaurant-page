@@ -5,8 +5,8 @@ import menuPage from "./pages/menu.js";
 
 // Main section
 const dom = cacheDom();
-bindEvents();
 replaceContent(homePage());
+bindEvents();
 
 
 // Cache dom
