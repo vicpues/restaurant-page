@@ -1,3 +1,4 @@
+import fruitImg from "../assets/fruits.webp";
 import { createArticle, createHeader, createParagraph } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -16,7 +17,18 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        
+        const header = createHeader("Normal, non-radioactive fruits");
+        article.appendChild(header);
+        const figure = document.createElement("figure");
+        const image = document.createElement("img");
+        image.alt = "An assortment of happy, dancing fruits";
+        image.src = fruitImg;
+        figure.appendChild(image);
+        const caption = document.createElement("figcaption");
+        caption.textContent = "Just good ol' fruit";
+        figure.appendChild(caption);
+
+        article.appendChild(figure);
 
         return article;
     })())
