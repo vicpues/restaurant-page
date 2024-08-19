@@ -1,5 +1,6 @@
-import fruitImg from "../assets/fruits.webp";
-import soporImg from "../assets/sopor-slime.webp";
+import fruitWebp from "../assets/fruits.webp";
+import soporWebp from "../assets/sopor-slime.webp";
+import steakGif from "../assets/lightly-irradiated.gif";
 import { createArticle, createHeader, createParagraph, createFigure } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -22,8 +23,8 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: fruitImg,
-            optimalSrc: fruitImg,
+            regularSrc: fruitWebp,
+            optimalSrc: fruitWebp,
             altText: "An assortment of happy, dancing fruits",
             captionText: "just some good ol' fruit!",
             captionClasses: ["quirk", "john"]
@@ -40,8 +41,8 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: soporImg,
-            optimalSrc: soporImg,
+            regularSrc: soporWebp,
+            optimalSrc: soporWebp,
             altText: "A bowl of green, gooey sopor slime",
             captionText: "NOP3. DON'T 3V3N TH1NK 4BOUT 1T.",
             captionClasses: ["quirk", "terezi"],
@@ -54,7 +55,17 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        
+        const header = createHeader("Lightly irradiated steak");
+        article.appendChild(header);
+
+        const figure = createFigure({
+            regularSrc: steakGif,
+            optimalSrc: steakGif,
+            altText: "Glowing green steak",
+            captionText: "a rare medium well done ^_^ (get it??)",
+            captionClasses: ["quirk", "jade"],
+        });
+        article.appendChild(figure);
 
         return article;
     })())
