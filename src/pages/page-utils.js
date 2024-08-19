@@ -17,6 +17,40 @@ export function createParagraph(text) {
     return para;
 }
 
-export function createFigure() {
+export function createFigure({
+        regularSrc,
+        optimalSrc,
+        altText,
+        captionText,
+        captionClasses,
+    }) {
+
     
+    const picture = document.createElement("picture");
+    
+    const img = document.createElement("img");
+    img.classList.add("body-image");
+    img.src = regularSrc;
+    img.alt = altText;
+    picture.appendChild(img);
+    
+    if (optimalSrc) {
+        const source = document.createElement("source");
+        source.type = "image/webp";
+        source.srcset = optimalSrc;
+        picture.appendChild(source);
+    };
+
+    const caption = document.createElement("figcaption");
+    caption.textContent = (captionText) ? captionText : "";
+    if (Array.isArray(captionClasses)) {
+        captionClasses.forEach(string => caption.classList.add(string));
+    } else if (captionClasses) {
+        caption.classList.add(captionClasses);
+    }
+    
+    const figure = document.createElement("figure");
+    figure.appendChild(picture);
+    figure.appendChild(caption);
+    return figure;
 }

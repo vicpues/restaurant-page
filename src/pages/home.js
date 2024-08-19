@@ -1,5 +1,5 @@
 import adsImg from "../assets/commercial-partners.webp";
-import {createArticle, createHeader, createParagraph} from "./page-utils";
+import {createArticle, createHeader, createParagraph, createFigure} from "./page-utils";
 
 export default function generateHomePage() {
 
@@ -22,20 +22,13 @@ export default function generateHomePage() {
 
     const article2 = (function() {
         const article = createArticle();
-        const figure = document.createElement("figure");
-
-        const img = document.createElement("img");
-        img.classList.add("body-image");
-        img.src = adsImg;
-        img.alt = "A wonderful spread of tasteful banner ads";
-        figure.appendChild(img);
-
-        const caption = document.createElement("figcaption");
-        caption.textContent = "Please enjoy these delightful and uplifting messages, courtesy of our commercial partners";
-        figure.appendChild(caption);
-
+        const figure = createFigure({
+            regularSrc: adsImg,
+            optimalSrc: adsImg,
+            altText: "A wonderful spread of tasteful banner ads",
+            captionText: "Please enjoy these delightful and uplifting messages, courtesy of our commercial partners",
+        })
         article.appendChild(figure);
-
         return article;
     })();
     content.push(article2);
