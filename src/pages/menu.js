@@ -30,6 +30,7 @@ export default function generateMenuPage() {
             optimalSrc: fruitWebp,
             altText: "An assortment of happy, dancing fruits",
             captionText: "just some good ol' fruit!",
+            captionAlt: "John says: Just some good old fruit!",
             captionClasses: ["quirk", "john"]
         });
         article.appendChild(figure);
@@ -48,6 +49,7 @@ export default function generateMenuPage() {
             optimalSrc: soporWebp,
             altText: "A bowl of green, gooey sopor slime",
             captionText: "HeCk YeAh MaN lEt'S mOtHeRf*CkIn Do ThIs",
+            captionAlt: "Gamzee says: Heck yeah man, let's motherfucking do this",
             captionClasses: ["quirk", "gamzee"],
         });
         article.appendChild(figure);
@@ -66,6 +68,7 @@ export default function generateMenuPage() {
             optimalSrc: steakGif,
             altText: "Glowing green steak",
             captionText: "a rare medium well done ^_^ (get it??)",
+            captionAlt: "Jade says: A rare medium well done! Get it?",
             captionClasses: ["quirk", "jade"],
         });
         article.appendChild(figure);
@@ -102,6 +105,7 @@ export default function generateMenuPage() {
             optimalSrc: cornGif,
             altText: "A very small image of a piece of candy corn",
             captionText: "THIS WAS JUST SITTING UNUSED IN OUR SOURCE FILES. WHAT A WASTE.",
+            captionAlt: "Karkat says: This was just sitting unused in our source files. What a waste.",
             captionClasses: ["quirk", "karkat"],
         });
         article.appendChild(figure);
@@ -120,6 +124,7 @@ export default function generateMenuPage() {
             optimalSrc: faygoWebp,
             altText: "Eridan holding a bottle of Faygo",
             captionText: "OOOH NO, W3'R3 NOT DO1NG TH1S.",
+            captionAlt: "Terezi says: Ohh no, we're not doing this.",
             captionClasses: ["quirk", "terezi"],
         });
         article.appendChild(figure);

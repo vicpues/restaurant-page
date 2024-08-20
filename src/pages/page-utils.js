@@ -22,6 +22,7 @@ export function createFigure({
         optimalSrc,
         altText,
         captionText,
+        captionAlt,
         captionClasses,
     }) {
 
@@ -48,6 +49,10 @@ export function createFigure({
     } else if (captionClasses) {
         caption.classList.add(captionClasses);
     }
+
+    if (captionAlt) {
+        caption.ariaLabel = captionAlt;
+    };
     
     const figure = document.createElement("figure");
     figure.appendChild(picture);
