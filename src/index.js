@@ -1,11 +1,11 @@
 import "./styles/main.scss";
 import homePage from "./pages/home.js";
-import aboutPage from "./pages/about.js";
 import menuPage from "./pages/menu.js";
+import aboutPage from "./pages/about.js";
 
 // Main section
 const dom = cacheDom();
-replaceContent(menuPage());
+replaceContent(aboutPage());
 bindEvents();
 
 
