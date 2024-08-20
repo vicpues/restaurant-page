@@ -13,5 +13,15 @@ export default function generateAboutPage() {
     })());
 
 
+    content.push((() => {
+        const article = createArticle();
+        article.appendChild(createHeader("Our staff"));
+        const para = createParagraph("You do not need to know a8out this :::;)");
+        para.ariaLabel = "Vriska says: You do not need to know about this";
+        para.classList.add("quirk", "vriska");
+        article.appendChild(para);
+        return article;
+    })());
+
     return content;
 }
