@@ -4,6 +4,7 @@ import steakGif from "../assets/lightly-irradiated.gif";
 import pumpkinWebp from "../assets/what-pumpkin.webp";
 import cornGif from "../assets/candy-corn.gif";
 import faygoWebp from "../assets/eridan-faygo.webp";
+import bluhGif from "../assets/bluh.gif";
 import { createArticle, createHeader, createParagraph, createFigure, createPicture } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -93,8 +94,8 @@ export default function generateMenuPage() {
 
         figure.addEventListener("mouseover", (e) => {
             figure.remove();
-            article.appendChild(createParagraph("What pumpkin??"))
-        })
+            article.appendChild(createParagraph("What pumpkin??"));
+        });
 
         return article;
     })());
@@ -133,6 +134,22 @@ export default function generateMenuPage() {
             captionClasses: ["quirk", "terezi"],
         });
         article.appendChild(figure);
+
+        figure.addEventListener("mouseover", () => {
+            figure.querySelector("picture").replaceWith(createPicture({
+                regularSrc: bluhGif,
+                optimalSrc: bluhGif,
+                altText: "Eridan spitting out the faygo and saying 'BLUH'",
+            }));
+        });
+
+        figure.addEventListener("mouseout", () => {
+            figure.querySelector("picture").replaceWith(createPicture({
+                regularSrc: faygoWebp,
+                optimalSrc: faygoWebp,
+                altText: "Eridan holding a bottle of Faygo",
+            }));
+        });
 
         return article;
     })());
