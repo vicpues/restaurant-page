@@ -1,6 +1,7 @@
 import fruitWebp from "../assets/fruits.webp";
 import soporWebp from "../assets/sopor-slime.webp";
 import steakGif from "../assets/lightly-irradiated.gif";
+import pumpkinWebp from "../assets/what-pumpkin.webp";
 import { createArticle, createHeader, createParagraph, createFigure } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -73,7 +74,17 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        
+        const header = createHeader("A pumpkin...?");
+        article.appendChild(header);
+
+        const figure = createFigure({
+            regularSrc: pumpkinWebp,
+            optimalSrc: pumpkinWebp,
+            altText: "A pumpkin...?",
+            captionText: "",
+            captionClasses: "",
+        });
+        article.appendChild(figure);
 
         return article;
     })())
@@ -81,7 +92,17 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        
+        const header = createHeader("");
+        article.appendChild(header);
+
+        const figure = createFigure({
+            regularSrc: undefined,
+            optimalSrc: undefined,
+            altText: undefined,
+            captionText: undefined,
+            captionClasses: undefined,
+        });
+        article.appendChild(figure);
 
         return article;
     })())
