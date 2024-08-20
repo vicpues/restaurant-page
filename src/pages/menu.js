@@ -2,6 +2,7 @@ import fruitWebp from "../assets/fruits.webp";
 import soporWebp from "../assets/sopor-slime.webp";
 import steakGif from "../assets/lightly-irradiated.gif";
 import pumpkinWebp from "../assets/what-pumpkin.webp";
+import cornGif from "../assets/candy-corn.gif";
 import { createArticle, createHeader, createParagraph, createFigure } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -92,15 +93,15 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        const header = createHeader("");
+        const header = createHeader("candy-corn.gif");
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: undefined,
-            optimalSrc: undefined,
-            altText: undefined,
-            captionText: undefined,
-            captionClasses: undefined,
+            regularSrc: cornGif,
+            optimalSrc: cornGif,
+            altText: "A very small image of a piece of candy corn",
+            captionText: "THIS WAS JUST SITTING UNUSED IN OUR SOURCE FILES. WHAT A WASTE.",
+            captionClasses: ["quirk", "karkat"],
         });
         article.appendChild(figure);
 
