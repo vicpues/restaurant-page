@@ -4,11 +4,13 @@ export function createArticle() {
     return article;
 }
 
+
 export function createHeader(text) {
     const header = document.createElement("h3");
     header.textContent = text;
     return header;
 }
+
 
 export function createParagraph(text) {
     const para = document.createElement("p");
@@ -16,6 +18,7 @@ export function createParagraph(text) {
     para.textContent = text;
     return para;
 }
+
 
 export function createFigure({
         regularSrc,
@@ -26,21 +29,7 @@ export function createFigure({
         captionClasses,
     }) {
 
-    
-    const picture = document.createElement("picture");
-    
-    const img = document.createElement("img");
-    img.classList.add("body-image");
-    img.src = regularSrc;
-    img.alt = altText;
-    picture.appendChild(img);
-    
-    if (optimalSrc) {
-        const source = document.createElement("source");
-        source.type = "image/webp";
-        source.srcset = optimalSrc;
-        picture.appendChild(source);
-    };
+    const picture = createPicture({regularSrc, optimalSrc, altText});
 
     const caption = document.createElement("figcaption");
     caption.textContent = (captionText) ? captionText : "";
@@ -58,4 +47,29 @@ export function createFigure({
     figure.appendChild(picture);
     figure.appendChild(caption);
     return figure;
+}
+
+
+export function createPicture({
+        regularSrc,
+        optimalSrc,
+        altText,
+    }) {
+    
+    const picture = document.createElement("picture");
+
+    const img = document.createElement("img");
+    img.classList.add("body-image");
+    img.src = regularSrc;
+    img.alt = altText;
+    picture.appendChild(img);
+    
+    if (optimalSrc) {
+        const source = document.createElement("source");
+        source.type = "image/webp";
+        source.srcset = optimalSrc;
+        picture.appendChild(source);
+    };
+
+    return picture;
 }
