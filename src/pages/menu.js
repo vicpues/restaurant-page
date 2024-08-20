@@ -15,7 +15,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         return article;
-    })())
+    })());
 
     content.push((() => {
         const article = createArticle();
@@ -33,7 +33,7 @@ export default function generateMenuPage() {
         article.appendChild(figure);
 
         return article;
-    })())
+    })());
 
     content.push((() => {
         const article = createArticle();
@@ -51,7 +51,7 @@ export default function generateMenuPage() {
         article.appendChild(figure);
 
         return article;
-    })())
+    })());
 
     content.push((() => {
         const article = createArticle();
@@ -69,7 +69,7 @@ export default function generateMenuPage() {
         article.appendChild(figure);
 
         return article;
-    })())
+    })());
 
     content.push((() => {
         const article = createArticle();
@@ -87,7 +87,7 @@ export default function generateMenuPage() {
         article.appendChild(figure);
 
         return article;
-    })())
+    })());
 
     content.push((() => {
         const article = createArticle();
@@ -105,8 +105,25 @@ export default function generateMenuPage() {
         article.appendChild(figure);
 
         return article;
-    })())
+    })());
 
+    content.push((() => {
+        const article = createArticle();
+
+        const header = createHeader("");
+        article.appendChild(header);
+
+        const figure = createFigure({
+            regularSrc: undefined,
+            optimalSrc: undefined,
+            altText: undefined,
+            captionText: undefined,
+            captionClasses: undefined,
+        });
+        article.appendChild(figure);
+
+        return article;
+    })());
 
 
     return content;
