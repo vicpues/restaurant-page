@@ -6,7 +6,7 @@
 - [x] Include fancy fonts or something
 - [x] Recreate homepage using js in separate module
 - [x] Write logic and listeners to switch between tabs in index.js
-- [_] Recreate other two pages
+- [x] Recreate other two pages
 - [_] Style other two pages
 - [_] Compress / optimise images
 - [_] Run the home tab module by default on page load
