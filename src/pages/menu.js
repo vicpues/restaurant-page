@@ -4,7 +4,7 @@ import steakGif from "../assets/lightly-irradiated.gif";
 import pumpkinWebp from "../assets/what-pumpkin.webp";
 import cornGif from "../assets/candy-corn.gif";
 import faygoWebp from "../assets/eridan-faygo.webp";
-import { createArticle, createHeader, createParagraph, createFigure } from "./page-utils";
+import { createArticle, createHeader, createParagraph, createFigure, createPicture } from "./page-utils";
 
 export default function generateMenuPage() {
     const content = [];
@@ -90,6 +90,11 @@ export default function generateMenuPage() {
             captionClasses: "",
         });
         article.appendChild(figure);
+
+        figure.addEventListener("mouseover", (e) => {
+            figure.remove();
+            article.appendChild(createParagraph("What pumpkin??"))
+        })
 
         return article;
     })());
