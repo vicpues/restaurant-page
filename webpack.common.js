@@ -18,11 +18,6 @@ const plugins = [
 
 ];
 
-// only enable hot in development
-if (devMode) {
-  plugins.push(new webpack.HotModuleReplacementPlugin());
-};
-
 module.exports = {
   mode: "development",
   entry: "./src/index.js",

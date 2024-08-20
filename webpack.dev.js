@@ -11,6 +11,7 @@ module.exports = merge(common, {
         static: {
             directory: path.join(__dirname, "./dist")
         },
+        hot: true,
         compress: true,
         port: 5500,
         host: "0.0.0.0",
