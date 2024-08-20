@@ -3,6 +3,7 @@ import soporWebp from "../assets/sopor-slime.webp";
 import steakGif from "../assets/lightly-irradiated.gif";
 import pumpkinWebp from "../assets/what-pumpkin.webp";
 import cornGif from "../assets/candy-corn.gif";
+import faygoWebp from "../assets/eridan-faygo.webp";
 import { createArticle, createHeader, createParagraph, createFigure } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -111,15 +112,15 @@ export default function generateMenuPage() {
     content.push((() => {
         const article = createArticle();
 
-        const header = createHeader("");
+        const header = createHeader("This thing");
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: undefined,
-            optimalSrc: undefined,
-            altText: undefined,
-            captionText: undefined,
-            captionClasses: undefined,
+            regularSrc: faygoWebp,
+            optimalSrc: faygoWebp,
+            altText: "Eridan holding a bottle of Faygo",
+            captionText: "OOOH NO, W3'R3 NOT DO1NG TH1S.",
+            captionClasses: ["quirk", "terezi"],
         });
         article.appendChild(figure);
 
