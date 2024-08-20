@@ -47,8 +47,8 @@ export default function generateMenuPage() {
             regularSrc: soporWebp,
             optimalSrc: soporWebp,
             altText: "A bowl of green, gooey sopor slime",
-            captionText: "NOP3. DON'T 3V3N TH1NK 4BOUT 1T.",
-            captionClasses: ["quirk", "terezi"],
+            captionText: "HeCk YeAh MaN lEt'S mOtHeRf*CkIn Do ThIs",
+            captionClasses: ["quirk", "gamzee"],
         });
         article.appendChild(figure);
 
