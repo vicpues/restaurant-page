@@ -96,7 +96,7 @@ export default function generateMenuPage() {
         });
         article.appendChild(figure);
 
-        figure.addEventListener("mouseover", (e) => {
+        article.addEventListener("mouseover", (e) => {
             figure.remove();
             article.appendChild(createParagraph("What pumpkin??"));
         });
@@ -115,8 +115,8 @@ export default function generateMenuPage() {
             regularSrc: cornGif,
             optimalSrc: cornGif,
             altText: "A very small image of a piece of candy corn",
-            captionText: "THIS WAS JUST SITTING UNUSED IN OUR SOURCE FILES. WHAT A WASTE.",
-            captionAlt: "Karkat says: This was just sitting unused in our source files. What a waste.",
+            captionText: "THIS WAS JUST SITTING IN OUR SOURCE FILES. WHAT A WASTE.",
+            captionAlt: "Karkat says: This was just sitting in our source files. What a waste.",
             captionClasses: ["quirk", "karkat"],
         });
         article.appendChild(figure);
@@ -141,7 +141,7 @@ export default function generateMenuPage() {
         });
         article.appendChild(figure);
 
-        figure.addEventListener("mouseover", () => {
+        article.addEventListener("mouseover", () => {
             figure.querySelector("picture").replaceWith(createPicture({
                 regularSrc: bluhGif,
                 optimalSrc: bluhGif,
@@ -149,7 +149,7 @@ export default function generateMenuPage() {
             }));
         });
 
-        figure.addEventListener("mouseout", () => {
+        article.addEventListener("mouseout", () => {
             figure.querySelector("picture").replaceWith(createPicture({
                 regularSrc: faygoWebp,
                 optimalSrc: faygoWebp,
