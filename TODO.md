@@ -10,7 +10,7 @@
 - [x] Style other two pages
 - [x] Compress / optimise images
 - [x] Add meta head description
-- [_] Run the home tab module by default on page load
+- [x] Run the home tab module by default on page load
 - [_] Write readme
 - [_] Publish to gh pages (It's a little complicated) 
 - [_] Link repo and profile in footer
