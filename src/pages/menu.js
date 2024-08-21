@@ -94,11 +94,17 @@ export default function generateMenuPage() {
             captionText: "",
             captionClasses: "",
         });
+        figure.querySelector("picture").style.marginBottom = 0;
         article.appendChild(figure);
 
-        article.addEventListener("mouseover", (e) => {
+        figure.addEventListener("mouseover", () => {
+            const paraHeight = `${figure.querySelector("picture").offsetHeight}px`;
+            const newPara = createParagraph("What pumpkin??");
+            newPara.style.height = paraHeight;
+            newPara.style.lineHeight = paraHeight;
+            newPara.style.marginBlock = "0";
             figure.remove();
-            article.appendChild(createParagraph("What pumpkin??"));
+            article.appendChild(newPara);
         });
 
         return article;
