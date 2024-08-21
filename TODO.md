@@ -9,6 +9,7 @@
 - [x] Recreate other two pages
 - [_] Style other two pages
 - [_] Compress / optimise images
+- [_] Add meta head description
 - [_] Run the home tab module by default on page load
 - [_] Write readme
 - [_] Publish to gh pages (It's a little complicated) 
