@@ -83,7 +83,7 @@ export function createPicture({
     if (optimalSrcLarge) {
         const source = document.createElement("source");
         source.type = "image/webp";
-        source.meia = "(min-width: 400px)";
+        source.media = "(min-width: 400px)";
         source.srcset = optimalSrcLarge;
         picture.appendChild(source);
     };
