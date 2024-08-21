@@ -28,7 +28,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: fruitWebp,
+            legacySrc: fruitWebp,
             optimalSrc: fruitWebp,
             altText: "An assortment of happy, dancing fruits",
             captionText: "just some good ol' fruit!",
@@ -48,7 +48,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: soporWebp,
+            legacySrc: soporWebp,
             optimalSrc: soporWebp,
             altText: "A bowl of green, gooey sopor slime",
             captionText: "HeCk YeAh MaN lEt'S mOtHeRf*CkIn Do ThIs",
@@ -68,7 +68,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: steakGif,
+            legacySrc: steakGif,
             optimalSrc: steakGif,
             altText: "Glowing green steak",
             captionText: "a rare medium well done ^_^ (get it??)",
@@ -88,7 +88,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: pumpkinWebp,
+            legacySrc: pumpkinWebp,
             optimalSrc: pumpkinWebp,
             altText: "A pumpkin...?",
             captionText: "",
@@ -118,7 +118,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: cornGif,
+            legacySrc: cornGif,
             optimalSrc: cornGif,
             altText: "A very small image of a piece of candy corn",
             captionText: "THIS WAS JUST SITTING IN OUR SOURCE FILES. WHAT A WASTE.",
@@ -138,7 +138,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            regularSrc: faygoWebp,
+            legacySrc: faygoWebp,
             optimalSrc: faygoWebp,
             altText: "Eridan holding a bottle of Faygo",
             captionText: "OOOH NO, W3'R3 NOT DO1NG TH1S.",
@@ -149,7 +149,7 @@ export default function generateMenuPage() {
 
         article.addEventListener("mouseover", () => {
             figure.querySelector("picture").replaceWith(createPicture({
-                regularSrc: bluhGif,
+                legacySrc: bluhGif,
                 optimalSrc: bluhGif,
                 altText: "Eridan spitting out the faygo and saying 'BLUH'",
             }));
@@ -157,7 +157,7 @@ export default function generateMenuPage() {
 
         article.addEventListener("mouseout", () => {
             figure.querySelector("picture").replaceWith(createPicture({
-                regularSrc: faygoWebp,
+                legacySrc: faygoWebp,
                 optimalSrc: faygoWebp,
                 altText: "Eridan holding a bottle of Faygo",
             }));

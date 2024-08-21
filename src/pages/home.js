@@ -22,7 +22,7 @@ export default function generateHomePage() {
     content.push((() => {
         const article = createArticle();
         const figure = createFigure({
-            regularSrc: adsImg,
+            legacySrc: adsImg,
             optimalSrc: adsImg,
             altText: "A wonderful spread of tasteful banner ads",
             captionText: "Please enjoy these delightful and uplifting messages, courtesy of our commercial partners",

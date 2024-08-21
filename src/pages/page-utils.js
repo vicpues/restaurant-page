@@ -21,7 +21,7 @@ export function createParagraph(text) {
 
 
 export function createFigure({
-        regularSrc,
+        legacySrc,
         optimalSrc,
         altText,
         captionText,
@@ -29,7 +29,7 @@ export function createFigure({
         captionClasses,
     }) {
 
-    const picture = createPicture({regularSrc, optimalSrc, altText});
+    const picture = createPicture({legacySrc, optimalSrc, altText});
 
     const caption = document.createElement("figcaption");
     caption.textContent = (captionText) ? captionText : "";
@@ -51,8 +51,10 @@ export function createFigure({
 
 
 export function createPicture({
-        regularSrc,
-        optimalSrc,
+        legacySrcSmall,
+        legacySrcLarge,
+        optimalSrcSmall,
+        optimalSrcLarge,
         altText,
     }) {
     
@@ -60,14 +62,29 @@ export function createPicture({
 
     const img = document.createElement("img");
     img.classList.add("body-image");
-    img.src = regularSrc;
+    img.src = legacySrcSmall;
     img.alt = altText;
     picture.appendChild(img);
+
+    if (legacySrcLarge) {
+        const source = document.createElement("source");
+        source.srcset = legacySrcLarge;
+        source.media = "(min-width: 400px)";
+        picture.appendChild(source);
+    };
+
+    if (optimalSrcSmall) {
+        const source = document.createElement("source");
+        source.srcset = optimalSrcSmall;
+        source.type = "image/webp";
+        picture.appendChild(source);
+    }
     
-    if (optimalSrc) {
+    if (optimalSrcLarge) {
         const source = document.createElement("source");
         source.type = "image/webp";
-        source.srcset = optimalSrc;
+        source.meia = "(min-width: 400px)";
+        source.srcset = optimalSrcLarge;
         picture.appendChild(source);
     };
 
