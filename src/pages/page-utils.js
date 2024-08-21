@@ -67,26 +67,6 @@ export function createPicture({
     }) {
     
     const picture = document.createElement("picture");
-
-    const img = document.createElement("img");
-    img.classList.add("body-image");
-    img.src = legacySrcSmall;
-    img.alt = altText;
-    picture.appendChild(img);
-
-    if (legacySrcLarge) {
-        const source = document.createElement("source");
-        source.srcset = legacySrcLarge;
-        source.media = "(min-width: 400px)";
-        picture.appendChild(source);
-    };
-
-    if (optimalSrcSmall) {
-        const source = document.createElement("source");
-        source.srcset = optimalSrcSmall;
-        source.type = "image/webp";
-        picture.appendChild(source);
-    }
     
     if (optimalSrcLarge) {
         const source = document.createElement("source");
@@ -95,6 +75,26 @@ export function createPicture({
         source.srcset = optimalSrcLarge;
         picture.appendChild(source);
     };
+    
+    if (optimalSrcSmall) {
+        const source = document.createElement("source");
+        source.srcset = optimalSrcSmall;
+        source.type = "image/webp";
+        picture.appendChild(source);
+    };
+    
+    if (legacySrcLarge) {
+        const source = document.createElement("source");
+        source.srcset = legacySrcLarge;
+        source.media = "(min-width: 400px)";
+        picture.appendChild(source);
+    };
+    
+    const img = document.createElement("img");
+    img.classList.add("body-image");
+    img.src = legacySrcSmall;
+    img.alt = altText;
+    picture.appendChild(img);
 
     return picture;
 }
