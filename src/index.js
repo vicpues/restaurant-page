@@ -5,7 +5,7 @@ import aboutPage from "./pages/about.js";
 
 // Main section
 const dom = cacheDom();
-replaceContent(aboutPage());
+replaceContent(menuPage());
 bindEvents();
 
 
