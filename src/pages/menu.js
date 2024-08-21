@@ -20,6 +20,7 @@ export default function generateMenuPage() {
         return article;
     })());
 
+
     content.push((() => {
         const article = createArticle();
 
@@ -38,6 +39,7 @@ export default function generateMenuPage() {
 
         return article;
     })());
+
 
     content.push((() => {
         const article = createArticle();
@@ -58,6 +60,7 @@ export default function generateMenuPage() {
         return article;
     })());
 
+
     content.push((() => {
         const article = createArticle();
 
@@ -76,6 +79,7 @@ export default function generateMenuPage() {
 
         return article;
     })());
+
 
     content.push((() => {
         const article = createArticle();
@@ -100,6 +104,7 @@ export default function generateMenuPage() {
         return article;
     })());
 
+
     content.push((() => {
         const article = createArticle();
 
@@ -118,6 +123,7 @@ export default function generateMenuPage() {
 
         return article;
     })());
+
 
     content.push((() => {
         const article = createArticle();
@@ -151,6 +157,7 @@ export default function generateMenuPage() {
             }));
         });
 
+        
         return article;
     })());
 

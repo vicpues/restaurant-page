@@ -31,6 +31,7 @@ export default function generateHomePage() {
         return article;
     })());
 
+    
     content.push((() => {
         const article = createArticle();
         article.appendChild(createHeader("Opening hours"));
