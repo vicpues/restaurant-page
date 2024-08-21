@@ -21,15 +21,23 @@ export function createParagraph(text) {
 
 
 export function createFigure({
-        legacySrc,
-        optimalSrc,
+        legacySrcSmall,
+        legacySrcLarge,
+        optimalSrcSmall,
+        optimalSrcLarge,
         altText,
         captionText,
         captionAlt,
         captionClasses,
     }) {
 
-    const picture = createPicture({legacySrc, optimalSrc, altText});
+    const picture = createPicture({
+        legacySrcSmall,
+        legacySrcLarge,
+        optimalSrcSmall,
+        optimalSrcLarge,
+        altText,
+    });
 
     const caption = document.createElement("figcaption");
     caption.textContent = (captionText) ? captionText : "";
