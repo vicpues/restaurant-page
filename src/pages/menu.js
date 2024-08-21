@@ -1,10 +1,23 @@
-import fruitWebp from "../assets/fruits.webp";
-import soporWebp from "../assets/sopor-slime.webp";
-import steakGif from "../assets/lightly-irradiated.gif";
-import pumpkinWebp from "../assets/what-pumpkin.webp";
-import cornGif from "../assets/candy-corn.gif";
-import faygoWebp from "../assets/eridan-faygo.webp";
-import bluhGif from "../assets/bluh.gif";
+import fruitsLegacyLarge from "../assets/legacy-large/fruits-large.gif";
+import fruitsLegacySmall from "../assets/legacy-small/fruits-small.gif";
+import fruitsWebpLarge from "../assets/webp-large/fruits-large.webp";
+import fruitsWebpSmall from "../assets/webp-small/fruits-small.webp";
+
+import soporLegacySmall from "../assets/legacy-small/sopor-slime-small.png";
+import soporWebpSmall from "../assets/webp-small/sopor-slime-small.webp";
+
+import steakLegacySmall from "../assets/legacy-small/lightly-irradiated-small.gif";
+
+import pumpkinLegacySmall from "../assets/legacy-small/pumpkin.gif";
+
+import cornLegacySmall from "../assets/legacy-small/candy-corn.gif";
+
+import faygoLegacySmall from "../assets/legacy-small/eridan-faygo-small.gif";
+
+
+import bluhLegacyLarge from "../assets/legacy-large/bluh-large.gif";
+import bluhLegacySmall from "../assets/legacy-small/bluh-small.gif";
+
 import { createArticle, createHeader, createParagraph, createFigure, createPicture } from "./page-utils";
 
 export default function generateMenuPage() {
@@ -28,8 +41,10 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            legacySrc: fruitWebp,
-            optimalSrc: fruitWebp,
+            legacySrcLarge: fruitsLegacyLarge,
+            legacySrcSmall: fruitsLegacySmall,
+            optimalSrcLarge: fruitsWebpLarge,
+            optimalSrcSmall: fruitsWebpSmall,
             altText: "An assortment of happy, dancing fruits",
             captionText: "just some good ol' fruit!",
             captionAlt: "John says: Just some good old fruit!",
@@ -48,8 +63,8 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            legacySrc: soporWebp,
-            optimalSrc: soporWebp,
+            legacySrcSmall: soporLegacySmall,
+            optimalSrcSmall: soporWebpSmall,
             altText: "A bowl of green, gooey sopor slime",
             captionText: "HeCk YeAh MaN lEt'S mOtHeRf*CkIn Do ThIs",
             captionAlt: "Gamzee says: Heck yeah man, let's motherfucking do this",
@@ -68,8 +83,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            legacySrc: steakGif,
-            optimalSrc: steakGif,
+            legacySrcSmall: steakLegacySmall,
             altText: "Glowing green steak",
             captionText: "a rare medium well done ^_^ (get it??)",
             captionAlt: "Jade says: A rare medium well done! Get it?",
@@ -88,8 +102,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            legacySrc: pumpkinWebp,
-            optimalSrc: pumpkinWebp,
+            legacySrcSmall: pumpkinLegacySmall,
             altText: "A pumpkin...?",
             captionText: "",
             captionClasses: "",
@@ -118,8 +131,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            legacySrc: cornGif,
-            optimalSrc: cornGif,
+            legacySrcSmall: cornLegacySmall,
             altText: "A very small image of a piece of candy corn",
             captionText: "THIS WAS JUST SITTING IN OUR SOURCE FILES. WHAT A WASTE.",
             captionAlt: "Karkat says: This was just sitting in our source files. What a waste.",
@@ -138,8 +150,7 @@ export default function generateMenuPage() {
         article.appendChild(header);
 
         const figure = createFigure({
-            legacySrc: faygoWebp,
-            optimalSrc: faygoWebp,
+            legacySrcSmall: faygoLegacySmall,
             altText: "Eridan holding a bottle of Faygo",
             captionText: "OOOH NO, W3'R3 NOT DO1NG TH1S.",
             captionAlt: "Terezi says: Ohh no, we're not doing this.",
@@ -149,16 +160,15 @@ export default function generateMenuPage() {
 
         article.addEventListener("mouseover", () => {
             figure.querySelector("picture").replaceWith(createPicture({
-                legacySrc: bluhGif,
-                optimalSrc: bluhGif,
+                legacySrcLarge: bluhLegacyLarge,
+                legacySrcSmall: bluhLegacySmall,
                 altText: "Eridan spitting out the faygo and saying 'BLUH'",
             }));
         });
 
         article.addEventListener("mouseout", () => {
             figure.querySelector("picture").replaceWith(createPicture({
-                legacySrc: faygoWebp,
-                optimalSrc: faygoWebp,
+                legacySrcSmall: faygoLegacySmall,
                 altText: "Eridan holding a bottle of Faygo",
             }));
         });

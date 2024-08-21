@@ -1,4 +1,7 @@
-import adsImg from "../assets/commercial-partners.webp";
+import partnersLegacyLarge from "../assets/legacy-large/commercial-partners-large.gif";
+import partnersLegacySmall from "../assets/legacy-small/commercial-partners-small.gif";
+import partnersWebpLarge from "../assets/webp-large/commercial-partners-large.webp";
+import partnersWebpSmall from "../assets/webp-small/commercial-partners-small.webp";
 import {createArticle, createHeader, createParagraph, createFigure} from "./page-utils";
 
 export default function generateHomePage() {
@@ -22,8 +25,10 @@ export default function generateHomePage() {
     content.push((() => {
         const article = createArticle();
         const figure = createFigure({
-            legacySrc: adsImg,
-            optimalSrc: adsImg,
+            legacySrcLarge: partnersLegacyLarge,
+            legacySrcSmall: partnersLegacySmall,
+            optimalSrcLarge: partnersWebpLarge,
+            optimalSrcSmall: partnersWebpSmall,
             altText: "A wonderful spread of tasteful banner ads",
             captionText: "Please enjoy these delightful and uplifting messages, courtesy of our commercial partners",
         })

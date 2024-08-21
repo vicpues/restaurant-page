@@ -59,7 +59,7 @@ nav {
     &::before {
     content: "";
     position: absolute;
-    background-image: url("../assets/candy-corn.gif");
+    background-image: url("../assets/legacy-small/candy-corn.gif");
     width: var(--candy-corn-size);
     height: var(--candy-corn-size);
     cursor: default;
