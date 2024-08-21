@@ -7,7 +7,7 @@
 - [x] Recreate homepage using js in separate module
 - [x] Write logic and listeners to switch between tabs in index.js
 - [x] Recreate other two pages
-- [_] Style other two pages
+- [x] Style other two pages
 - [_] Compress / optimise images
 - [_] Add meta head description
 - [_] Run the home tab module by default on page load
