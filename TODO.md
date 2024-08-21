@@ -8,7 +8,7 @@
 - [x] Write logic and listeners to switch between tabs in index.js
 - [x] Recreate other two pages
 - [x] Style other two pages
-- [_] Compress / optimise images
+- [x] Compress / optimise images
 - [_] Add meta head description
 - [_] Run the home tab module by default on page load
 - [_] Write readme
