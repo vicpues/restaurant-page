@@ -4,6 +4,8 @@ This is a mock page for a fictional restaurant set in the webcomic [Homestuck](h
 
 Go ahead and check out the [📺 live view!](https://vicpues.github.io/restaurant-page/)
 
+### Development retrospective
+
 This assignment was the most fun and the most painful thus far. NPM and webpack are legitimately awesome; so awesome, in fact, that the project started to drag on and on because I kept finding new libraries and languages I wanted to try. Heck, it even got me to try out SASS, even though I called it quits before I really started to dig into it.
 
 That said, configuring webpack is a pain in the you-know-what. It's amazing when you get it right but oh man, it ain't easy getting there without a template. I might look into Vite one of these days to see if it makes things any easier.
