@@ -5,11 +5,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack serve --open --config webpack.dev.js",
-    "compile": "webpack --mode=production --config webpack.common.js",
-    "build": "npm run compile && open-cli ./dist/index.html",
+    "build": "webpack --mode=production --config webpack.common.js",
+    "open": "open-cli ./dist/index.html",
     "clean": "git rm -r --cached dist",
-    "firstDist": "npm run compile && git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages && npm run clean",
-    "dist": "npm run compile && git push origin --delete gh-pages && git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages && npm run clean"
+    "firstDist": "npm run build && git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages && npm run clean",
+    "dist": "npm run build && git push origin --delete gh-pages && git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages && npm run clean"
   },
   "keywords": [],
   "author": "",
