@@ -12,5 +12,5 @@
 - [x] Add meta head description
 - [x] Run the home tab module by default on page load
 - [x] Write readme
-- [_] Publish to gh pages (It's a little complicated) 
+- [x] Publish to gh pages (It's a little complicated) 
 - [_] Link repo and profile in footer
