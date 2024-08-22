@@ -2,7 +2,7 @@
 
 This is a mock page for a fictional restaurant set in the webcomic [Homestuck](https://www.homestuck.com/story), by Andrew Hussie. It's my entry for the restaurant page assignment in The Odin Project's [Full Stack Javascript](https://www.theodinproject.com/paths/full-stack-javascript) web dev course.
 
-Go ahead and check out the [📺 live view!]()
+Go ahead and check out the [📺 live view!](https://vicpues.github.io/restaurant-page/)
 
 This assignment was the most fun and the most painful thus far. NPM and webpack are legitimately awesome; so awesome, in fact, that the project started to drag on and on because I kept finding new libraries and languages I wanted to try. Heck, it even got me to try out SASS, even though I called it quits before I really started to dig into it.
 
