@@ -8,8 +8,10 @@
     "build": "webpack --mode=production --config webpack.common.js",
     "open": "open-cli ./dist/index.html",
     "clean": "git rm -r --cached dist",
-    "firstDist": "npm run build && git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages && npm run clean && git reset HEAD^",
-    "dist": "git push origin --delete gh-pages && npm run firstDist"
+    "predist": "git push origin --delete gh-pages ; npm run build",
+    "dist": "git add -f dist && git commit dist -m \"Release\" && git subtree push --prefix dist origin gh-pages",
+    "postdist": "npm run clean && git reset HEAD^"
+
   },
   "keywords": [],
   "author": "",
