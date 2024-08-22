@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open --config webpack.dev.js",
+    "dev": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --mode=production --config webpack.common.js && open-cli ./dist/index.html",
     "firstDist": "webpack --mode=production --config webpack.common.js && git add -f dist && git commit -m \"Release\" && git subtree push --prefix dist origin gh-pages",
     "dist": "webpack --mode=production --config webpack.common.js && git push origin --delete gh-pages && git add -f dist && git commit -m \"Release\" && git subtree push --prefix dist origin gh-pages"
