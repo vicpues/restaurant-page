@@ -13,4 +13,4 @@
 - [x] Run the home tab module by default on page load
 - [x] Write readme
 - [x] Publish to gh pages (It's a little complicated) 
-- [_] Link repo and profile in footer
+- [x] Link repo and profile in footer
