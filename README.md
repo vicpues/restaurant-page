@@ -1,6 +1,6 @@
 # Restaurant page
 
-This is a mock page for a fictional restaurant set in the webcomic [Homestuck](https://www.homestuck.com/story), by Andrew Hussie. It's my entry for the restaurant page assignment in The Odin Project's [Full Stack Javascript](https://www.theodinproject.com/paths/full-stack-javascript) web dev course.
+This is a mock page for a fictional restaurant set in the webcomic [Homestuck](https://www.homestuck.com/story), by Andrew Hussie. It's my entry for the restaurant page assignment in The Odin Project's [Full Stack Javascript](https://www.theodinproject.com/paths/full-stack-javascript) web dev course. Rebuilt and reuploaded to fix an issue with the commits on github.
 
 Go ahead and check out the [📺 live view!](https://vicpues.github.io/restaurant-page/)
 
